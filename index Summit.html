@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>TechFuture Summit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: white;
+        color: black;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 5px solid white;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        margin-top: 10px;
+    }
+
+    section {
+        background-color: white;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 700px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: square;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    form label, form p {
+        font-weight: bold;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    form input[type="radio"],
+    form input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    form button {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    form button:hover {
+        background-color: #0055aa;
+    }
+
+    footer {
+        background-color: white;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+        border-top: 5px solid red;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 2em;
+        }
+
+        section {
+            padding: 15px;
+        }
+
+        form button {
+            width: 100%;
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TechFuture Summit</h1>
+    <p>O futuro da tecnologia começa aqui!</p>
+  </header>
+
+  <section>
+    <h2>Sobre o Evento</h2>
+    <p><strong>Data:</strong> 15/08/2025</p>
+    <p><strong>Local:</strong> Salvador - BA</p>
+    <p>Um evento incrível sobre tecnologia e design. Venha aprender e se conectar!</p>
+  </section>
+
+  <section>
+    <h2>Palestrantes</h2>
+    <ul>
+      <li><strong>Maria Silva</strong> - Desenvolvedora Front-End</li>
+      <li><strong>João Souza</strong> - Designer UX/UI</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Formulário de Inscrição</h2>
+    <form>
+      <label>Nome:</label><br>
+      <input type="text" required><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" required><br><br>
+
+      <label>Telefone:</label><br>
+      <input type="tel" required><br><br>
+
+      <p>Tipo de ingresso:</p>
+      <label><input type="radio" name="ingresso" required> Presencial</label><br>
+      <label><input type="radio" name="ingresso" required> Online</label><br><br>
+
+      <label><input type="checkbox" required> Aceito os termos</label><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+</body>
+</html>

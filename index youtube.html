@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0f0f0f;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      height: 56px;
+      background-color: #212121;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+    }
+
+    .logo img {
+      height: 25px;
+    }
+
+    .search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 600px;
+  padding: 6px 12px;
+  background-color: #121212;
+  border: 1px solid #333;
+  border-radius: 20px 0 0 20px;
+  color: white;
+}
+
+.search-bar button {
+  padding: 6px 12px;
+  background-color: #333;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  color: white;
+}
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 230px;
+      background-color: #0f0f0f;
+      padding-top: 10px;
+      border-right: 1px solid #222;
+      height: calc(100vh - 56px);
+      position: fixed;
+      top: 56px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .sidebar a:hover {
+      background-color: #222;
+    }
+
+    .main {
+      margin-left: 230px;
+      padding: 20px 20px 20px 0; 
+      width: 100%;
+    }
+
+    .filters {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 20px;
+    }
+
+    .filter-btn {
+      background-color: #272727;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      color: white;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .filter-btn:hover {
+      background-color: #444;
+    }
+
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 5fr));
+      gap: 20px;
+    }
+
+    .video-card {
+      background-color: #181818;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .video-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .video-info {
+      padding: 10px;
+    }
+
+    .video-info h4 {
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: white;
+    }
+
+    .video-info p {
+      color: #aaa;
+      font-size: 13px;
+      margin: 0px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/YouTube_2024.svg/250px-YouTube_2024.svg.png" alt="Logo">
+  </div>
+  <div class="search-bar">
+    <input type="text" placeholder="Pesquisar">
+    <button>🔍</button>
+  </div>
+  <div>🔔 🧑</div>
+</header>
+
+<div class="container">
+  <nav class="sidebar">
+    <a href="#">🏠 Início</a>
+    <a href="#">🎬 Shorts</a>
+    <a href="#">📺 Inscrições</a>
+    <hr style="border-color: #333;">
+    <a href="#">🕒 Histórico</a>
+    <a href="#">🎞️ Playlists</a>
+    <a href="#">⏳ Assistir mais tarde</a>
+    <a href="#">👍 Vídeos com "Gostei"</a>
+    <hr style="border-color: #333;">
+    <a href="#">BRKsEDU </a>
+    <a href="#">CazéTV</a>
+    <a href="#">Flow Podcast</a>
+    <a href="#">FC 24</a>
+    <a href="#">30PRAUM </a>
+    <a href="#">CNN Brasil </a>
+  </nav>
+
+  <main class="main">
+    <div class="filters">
+      <button class="filter-btn">Tudo</button>
+      <button class="filter-btn">Música</button>
+      <button class="filter-btn">Jogos</button>
+      <button class="filter-btn">Neymar</button>
+      <button class="filter-btn">Ao vivo</button>
+      <button class="filter-btn">FIFA</button>
+      <button class="filter-btn">PC Gamer</button>
+      <button class="filter-btn">Estádios</button>
+      <button class="filter-btn">Mixes</button>
+      <button class="filter-btn">Podcasts</button>
+      <button class="filter-btn">Hardware</button>
+    </div>
+
+    <div class="videos">
+      <div class="video-card">
+        <img src="https://i.ytimg.com/vi/_W-YD2L16Lc/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDr4EfSxWbd5LKfdXhPkWTYQFCycA" alt="thumb">
+        <div class="video-info">
+          <h4>PSG X BOTAFOGO | COPA DO MUNDO DE CLUBES DA FIFA | 2ª RODADA | FASE DE GRUPOS</h4>
+          <p>CazéTV • 2,5 mil assistindo</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="https://i.ytimg.com/vi/xMOXHs2owb0/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLACCD-jCdJxPRf5nQjkah7P1vjiwQ" alt="thumb">
+        <div class="video-info">
+          <h4>MELHOREI AO MÁXIMO O PC GAMER COMPLETO DA SHOPEE</h4>
+          <p>MW Informatica • 168 mil visualizações</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="https://i.ytimg.com/vi/3__5kYthTX0/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAwfaGCirIGHSfF4py-QGYXAug11Q" alt="thumb">
+        <div class="video-info">
+          <h4>Neymar vs Bayern Munich (13/04/21) | HD 1080i</h4>
+          <p>MAcompsHD • 123 mil visualizações</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="https://i.ytimg.com/vi/bAVk7T1Xiys/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCdHKAYEOVl_42hvYJHOz_i8c-PzQ" alt="thumb">
+        <div class="video-info">
+          <h4>PASSEI MAL DE TANTO RIR! - PEAK COM OS AMIGOS</h4>
+          <p>Alanzoka • 1,6 mi visualizações</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="https://i.ytimg.com/vi/EGIJr7ZUbKE/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGCcgZihyMA8=&rs=AOn4CLD5l7TaA15pmr0n30epMx1-xaxizA" alt="thumb">
+        <div class="video-info">
+          <h4>10. VEIGH - Filho da Promessa [Clipe Oficial] (Eu Venci o Mundo)</h4>
+          <p>MAcompsHD • 123 mil visualizações</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
